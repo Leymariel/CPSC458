@@ -1,0 +1,121 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e2e2e2;
+    transition: background-color 0.3s;
+}
+
+.hero:hover {
+    background-color: #d2d2d2;
+}
+
+.hero img {
+    max-width: 150px;
+    border-radius: 50%;
+    animation: slideIn 20s infinite linear;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes heroAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.project, .job {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+.project:hover, .job:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+.hero img {
+    /* Resizing the hero image */
+    width: 300px; 
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; 
+}
+
+.project-image {
+    width: 500px; /* Smaller project images */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
